@@ -1,16 +1,61 @@
-# React + Vite
+# CreateVyral — Where Influence Becomes Impact
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CreateVyral is an influencer marketing marketplace connecting brands, creators, and learners. Built with React, Vite and Tailwind CSS, this repository contains a production-ready starter for an ultra-premium platform (design system, pages, dashboards, and seeded sample data).
 
-Currently, two official plugins are available:
+Quick Links
+- Website: (local dev) http://localhost:5173 (Vite default) or http://localhost:5174 (fallback)
+- Repo branch: `rebrand/createvyral-v1`
+- Backup tag: `backup/pre-rebrand-20251228`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Getting started (local development)
 
-## React Compiler
+1. Install dependencies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm ci
+```
 
-## Expanding the ESLint configuration
+2. Start dev server
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm run dev
+```
+
+3. Build for production
+
+```bash
+npm run build
+```
+
+Project Structure Highlights
+- src/Components — UI and page components (cards, dashboard widgets, promos)
+- src/Pages — All pages (Landing, Onboarding, Home, Search, Campaigns, Courses, Dashboards)
+- src/Entities — Data models (Creator, Influencer, Campaign, ServiceRequest)
+- src/Components/ui — Design system building blocks (Button, Input, Label, GlassCard, AnimatedGradientBg, FusionLogo, etc.)
+- src/Components/data — Seed data (sample creators, influencers, courses, campaigns)
+
+Design & Brand
+- Tagline: **Where Influence Becomes Impact**
+- Logo: https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/692f0f1978791959e9444ac5/a976ca7d4_image.png
+- Color system and visual tokens are configured in `tailwind.config.js` (primary gradient: #ec4899 → #8b5cf6 → #3b82f6)
+
+Development Notes
+- Uses Base44 SDK stubs/integration for auth and file uploads (see `src/api/base44Client.js`).
+- Animations are implemented with Framer Motion.
+- Charts use Recharts.
+- Routing via React Router DOM.
+
+How you can contribute
+- Work on an item from the todo list in the `rebrand/createvyral-v1` branch.
+- Open a PR back to `main` when ready and include a brief description of changes and screenshots for UI work.
+
+Deployment
+- Recommended: Vercel or Netlify. Ensure environment variables required for Base44 SDK are set in the deployment settings.
+
+License & Contact
+- MIT License (change as needed)
+- For access or collaboration, open issues or PRs on GitHub.
+
+---
+
+This repository is actively being rebranded to CreateVyral. If you need help running the app locally, or want me to continue implementing pages and the full design system, tell me which features to prioritize next (Landing, Onboarding flows, or Dashboards).
