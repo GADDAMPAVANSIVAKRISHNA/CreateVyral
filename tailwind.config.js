@@ -40,14 +40,24 @@ export default {
                     DEFAULT: "hsl(var(--card))",
                     foreground: "hsl(var(--card-foreground))",
                 },
+                brand: {
+                    pink: '#ec4899',
+                    purple: '#8b5cf6',
+                    blue: '#3b82f6'
+                }
             },
             borderRadius: {
                 lg: "var(--radius)",
                 md: "calc(var(--radius) - 2px)",
                 sm: "calc(var(--radius) - 4px)",
             },
+            backgroundImage: {
+                'brand-gradient': 'linear-gradient(90deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%)',
+                'brand-gradient-angled': 'linear-gradient(135deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%)'
+            },
             animation: {
                 blob: "blob 7s infinite",
+                'gradient-anim': 'gradient 10s ease infinite',
             },
             keyframes: {
                 blob: {
@@ -64,6 +74,11 @@ export default {
                         transform: "translate(0px, 0px) scale(1)",
                     },
                 },
+                gradient: {
+                    '0%': { 'background-position': '0% 50%' },
+                    '50%': { 'background-position': '100% 50%' },
+                    '100%': { 'background-position': '0% 50%' },
+                }
             },
         },
     },
