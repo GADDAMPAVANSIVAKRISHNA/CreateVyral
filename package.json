@@ -1,8 +1,15 @@
 {
   "name": "create-vyral-web",
+  "description": "CreateVyral — Where Influence Becomes Impact. Influencer marketplace connecting brands and creators",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/GADDAMPAVANSIVAKRISHNA/CreateVyral",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GADDAMPAVANSIVAKRISHNA/CreateVyral.git"
+  },
+  "author": "CreateVyral" ,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
